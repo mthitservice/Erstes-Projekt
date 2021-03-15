@@ -1,0 +1,24 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+header {border: 1px solid rgb(19, 190, 76);}
+nav {border: 1px solid rgb(10, 35, 172); 
+width: 20%;
+float: left;
+
+}
+main{width:78%; float:right;}
+
+aside {
+    float:none;
+    clear:both;
+    background-color:rgb(62, 33, 223);
+
+}
+footer {border: 1px solid rgb(221, 106, 40);}
+article {border: 1px solid rgb(187, 15, 144);}
+#A2{background-color: chartreuse;}
+.articlehead{background-color:darkblue;}
