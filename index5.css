@@ -18,6 +18,7 @@ footer {border: 1px solid rgb(221, 106, 40);}
 article {border: 1px solid rgb(187, 15, 144);}
 #A2{background-color: chartreuse;}
 .articlehead{background-color:darkblue;}
-.box{display:inline-block;}
+/*.box{display:inline-block;} */
 
+/* Entfernt die Flussrichtung aus Positionsboxen (div/article/section/nav ...) */
 .clearer{clear:both;float: none;}

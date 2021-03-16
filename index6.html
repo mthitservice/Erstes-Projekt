@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="de">
+   <head>
+        <!-- Zeichensatzfestlegung-->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Titel der Seite -->
+        <title>Unsere sechste Seite</title>
+<style>
+    #idcbox {border: 3px solid #f00; 
+        padding-left: 10px;
+        padding-right: 10px;
+         padding-bottom: 10px; 
+         padding-top: 10px;
+         text-align: center;
+         
+    }
+    .cbox {border: 3px solid rgb(70, 211, 27);
+    padding:5px;
+    margin-bottom:10px;
+    width:30%;
+    display:inline-block;
+    min-width:160px;
+    max-width: 190px;
+}
+
+.cbox p,.cbox h5 {text-align: left;}
+.cbox:last-child{background-color: crimson;}
+/* Nte(2) Element der Klasse CBOX */
+.cbox:nth-of-type(2){color: rgb(17, 52, 209);}
+
+@media only screen and (min-width:460px)   {
+
+
+    .cbox{ background-color: bisque;}
+}
+@media only screen and (min-width:680px)   {
+
+    .cbox{background-color: chartreuse;
+    display:block;}
+}
+
+
+    
+
+</style>
+
+   </head>
+   <body>
+       <div id="idcbox">
+          <h5>Überschrift</h5>
+            <div class="cbox">
+                <h5>Überschrift</h5>
+                <p>Das ist Text</p>
+
+            </div>
+            <div class="cbox">
+                <h5>Überschrift</h5>
+                <p>Das ist Text</p>
+            </div>
+            <div class="cbox">
+                <h5>Überschrift</h5>
+                <p>Das ist Text</p>
+            </div>
+            
+         
+         
+       </div>
+      
+   </body>
+</html>
