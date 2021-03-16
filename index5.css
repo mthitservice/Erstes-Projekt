@@ -2,23 +2,96 @@
 *{
     margin: 0px;
     padding: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1em;
+}
+
+h1 {font-size: 1.4em;}
+h2 {font-size: 1.2em; }
+
+.bold {font-weight: bold;}
+
+
+header {/*border: 1px solid rgb(19, 190, 76); */
+  padding:5px;}
+
+nav {
+  width: 100%;
+  display: block;
+  /*background-color: rgb(213, 243, 45);*/
+  }
+
+nav a {margin: 10px; font-size: 1.2em;}
+
+nav ul {
+  margin:5px;
+  padding: 5px;
+  /*list-style-position: inside;*/
+ list-style-type:none;
 }
 
 
+main{width:100%; display: block;}
 
-header {border: 1px solid rgb(19, 190, 76);}
-nav {border: 1px solid rgb(10, 35, 172); 
-width: 20%;
-float: left;
+footer {/*border: 1px solid rgb(221, 106, 40);*/
+padding: 5px;
+text-align: center;
 
 }
-main{width:78%; float:right;}
+/*Artikelformatierung */
+article {
+margin-bottom: 10px;
+margin-left: 5px;
+padding:10px;
+}
 
-footer {border: 1px solid rgb(221, 106, 40);}
-article {border: 1px solid rgb(187, 15, 144);}
-#A2{background-color: chartreuse;}
-.articlehead{background-color:darkblue;}
+article a {font-style: normal;}
+
+article p {text-align:justify;}
+
+.articleauthor{font-weight: bold; margin-top: 10px;}
+
+.articleimg img {width:50%; max-width:150px;}
+
+aside {padding:5px;text-align: center;}
+
 /*.box{display:inline-block;} */
 
 /* Entfernt die Flussrichtung aus Positionsboxen (div/article/section/nav ...) */
-.clearer{clear:both;float: none;}
+/*.clearer{clear:both;float: none;}*/
+
+/* Tablet Ansicht */
+@media only screen and (min-width:460px)   {
+
+  nav {
+    width: 100%;
+    display: block;
+   /* background-color: red;*/
+    }
+
+    /*Artikelformatierung */
+  article {
+  margin-bottom: 10px;
+  padding:10px;
+  }
+  .articleimg img {width:100%; max-width:550px;}
+  main{width:100%; display: block;}
+  
+}
+/* Desktopansicht */
+@media only screen and (min-width:680px)   {
+
+  
+  nav {
+    width: 15%;
+    vertical-align: top;
+    display: inline-block;
+    }
+    /*Artikelformatierung */
+article {
+  margin-bottom: 10px;
+  padding:10px;
+  }
+  .articleimg img {width:100%; max-width:550px;}
+  main{width:84%; display: inline-block;}
+}
