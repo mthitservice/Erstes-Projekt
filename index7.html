@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="de">
+   <head>
+        <!-- Zeichensatzfestlegung-->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Titel der Seite -->
+        <title>Unsere siebente Seite</title>
+   </head>
+   <body>
+       <div id="Website">
+        <div id="Formular">
+            <form method="POST" action="https://httpbin.org/post">
+                <fieldset>
+                <label for="txt_nachnme">Nachname</label>
+                <input type="text" name="txt_nachname" placeholder="Gib den Namen ein"/>
+                <label for="txt_vorname">Vorname</label>
+                <input type="text" name="txt_vorname" placeholder="Gib den Vornamen ein"/>
+                <label for="txt_passwort">Passwort</label>
+                <input type="password" name="txt_passwort" placeholder="Gib ein Passwort ein"/>
+                </fieldset>
+                <fieldset>
+                <Select name="cmb_auswahl">
+                    <optgroup label="Gruppe1">
+                    <option value="Eins">1</option>
+                    <option value="Zwei" selected>2</option></optgroup>
+                    <optgroup label="Gruppe2">
+                    <option value="Drei">3</option>
+                    <option value="vier">4</option></optgroup>
+                </Select>
+                <input type="datetime-local" name="Datum"/>
+                <input type="hidden" value="5" name="_Artikelnummer"/>
+                </fieldset>
+                <fieldset>
+                    <legend>Dateifunktionen</legend>
+                        <input type="file" name="file" />
+                        <progress id="fortschritt" value="2" max="3"></progress>
+                </fieldset>
+                <fieldset>
+                    <legend>sonstige Inputs</legend>
+                       <input type="checkbox" value="1" name="c1"/>
+                       <input type="checkbox" value="2" name="c2"/>
+                       <input type="checkbox" value="3"name="c3"/>
+
+
+                       <input type="radio"   value="1"name="o1"/>
+                       <input type="radio"   value="2"name="o1"/>
+                       <input type="radio"   value="3"name="o1"/>
+                       
+
+
+                </fieldset>
+                <input type="button" value="Knopf" />
+                <button >Knopf neu</button>
+                <input type="submit" value="Absenden"/>
+                <input type="reset" value="Leeren"/>
+            </form>
+        </div>
+
+
+
+       </div>
+      
+   </body>
+</html>
