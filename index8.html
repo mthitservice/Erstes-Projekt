@@ -32,7 +32,7 @@
 
         }
 
-        input,button,select,progress,textarea {
+        input,button,select,progress,textarea ,fieldset{
             font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
             border:1px solid #ccc;
             font-size: 20px;
@@ -49,6 +49,10 @@
             -ms-border-radius:5px;
             
 
+        }
+        label{
+            font-size: 10px;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
         }
 
         input[ type=submit]   {
@@ -77,9 +81,9 @@
                 <label for="txt_nachnme">Nachname</label>
                 <input type="text" name="txt_nachname" required  placeholder="Gib den Namen ein"/>
                 <label for="txt_vorname">Vorname</label>
-                <input type="text" name="txt_vorname" required placeholder="Gib den Vornamen ein"/>
+                <input autofocus type="text" name="txt_vorname" required placeholder="Gib den Vornamen ein"/>
                 <label for="txt_email">Email</label>
-                <input type="email" name="txt_email" required placeholder="E-Mail Adreasse"/>
+                <input autocomplete="on" type="email" name="txt_email" required placeholder="E-Mail Adreasse"/>
                 <label for="txt_Alter">Alter</label>
                 <input type="number" name="txt_alter" required placeholder="Alter" required min="16" max="134"/>
                 <label for="txt_info">Info</label>
