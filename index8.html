@@ -68,7 +68,22 @@
 
 }
 
+        #search-button{
+            width: 300px;
+            height: 40px;
+        }
 
+        #search-button svg {
+            height: 30px;
+            width: 30px;
+
+        }
+
+   #search-button img {
+            height: 50px;
+            width: 50px;
+
+        }
 
     </style>
 
@@ -78,18 +93,27 @@
         <div id="Formular">
             <form method="POST" enctype="multipart/form-data" action="https://httpbin.org/post" >
                 <fieldset>
-                <label for="txt_nachnme">Nachname</label>
+                 <label for="txt_suche">Suche</label>
+                <input type="search" name="txt_suche" required  placeholder="Gib den Namen ein"/>
+               <button id="search-button">
+                <svg viewBox="0 0 24 24">
+                    <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+                    <path d="M0 0h24v24H0z" fill="none"/>
+                </svg>
+                   
+               </button>
+                    <label for="txt_nachnme">Nachname</label>
                 <input type="text" name="txt_nachname" required  placeholder="Gib den Namen ein"/>
                 <label for="txt_vorname">Vorname</label>
                 <input autofocus type="text" name="txt_vorname" required placeholder="Gib den Vornamen ein"/>
                 <label for="txt_email">Email</label>
-                <input autocomplete="on" type="email" name="txt_email" required placeholder="E-Mail Adreasse"/>
+                <input autocomplete="off" type="email" name="txt_email" required placeholder="E-Mail Adreasse"/>
                 <label for="txt_Alter">Alter</label>
                 <input type="number" name="txt_alter" required placeholder="Alter" required min="16" max="134"/>
                 <label for="txt_info">Info</label>
-                <input type="text" name="txt_info" required pattern="[A-Za-z0-9]{6}" placeholder="Information eingeben"/>
+                <input type="text" value="AAbb11" readonly name="txt_info" required pattern="[A-Za-z0-9]{6}" placeholder="Information eingeben"/>
                 <label for="txt_passwort">Passwort</label>
-                <input type="password" name="txt_passwort"  placeholder="Gib ein Passwort ein"/>
+                <input type="password" name="password"  placeholder="Gib ein Passwort ein"/>
                 </fieldset>
                 <fieldset>
                 <Select name="cmb_auswahl">
