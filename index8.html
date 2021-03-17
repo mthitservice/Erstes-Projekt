@@ -5,7 +5,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- Titel der Seite -->
-        <title>Unsere siebente Seite</title>
+        <title>Unsere achte Seite</title>
    </head>
    <body>
        <div id="Website">
@@ -13,11 +13,17 @@
             <form method="POST" enctype="multipart/form-data" action="https://httpbin.org/post" >
                 <fieldset>
                 <label for="txt_nachnme">Nachname</label>
-                <input type="text" name="txt_nachname"   placeholder="Gib den Namen ein"/>
+                <input type="text" name="txt_nachname" required  placeholder="Gib den Namen ein"/>
                 <label for="txt_vorname">Vorname</label>
-                <input type="text" name="txt_vorname" placeholder="Gib den Vornamen ein"/>
+                <input type="text" name="txt_vorname" required placeholder="Gib den Vornamen ein"/>
+                <label for="txt_email">Email</label>
+                <input type="email" name="txt_email" required placeholder="E-Mail Adreasse"/>
+                <label for="txt_Alter">Alter</label>
+                <input type="number" name="txt_alter" required placeholder="Alter" required min="16" max="134"/>
+                <label for="txt_info">Info</label>
+                <input type="text" name="txt_info" required pattern="[A-Za-z0-9]{6}" placeholder="Gib ein Passwort ein"/>
                 <label for="txt_passwort">Passwort</label>
-                <input type="password" name="txt_passwort" placeholder="Gib ein Passwort ein"/>
+                <input type="password" name="txt_passwort"  placeholder="Gib ein Passwort ein"/>
                 </fieldset>
                 <fieldset>
                 <Select name="cmb_auswahl">
