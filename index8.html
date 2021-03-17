@@ -27,7 +27,7 @@
         }
 
         form {
-                    width:400px;
+                    width:350px;
                     margin: 20px auto;
 
         }
@@ -36,9 +36,33 @@
             font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
             border:1px solid #ccc;
             font-size: 20px;
+            width: 300px;
+            min-height: 30px;
+            display: block;
+            margin-bottom: 15px;
+            margin-top: 5px;
+            outline: none;
+            border-radius: 5px;
+            -webkit-border-radius:5px;
+            -moz-border-radius:5px;
+            -o-border-radius:5px;
+            -ms-border-radius:5px;
             
 
         }
+
+        input[type=submit]{
+
+            background: none;
+            padding: 10px;
+
+        }
+        input[type=submit]:hover{
+
+        background:#88a;
+         padding: 10px;
+
+}
 
 
 
@@ -59,7 +83,7 @@
                 <label for="txt_Alter">Alter</label>
                 <input type="number" name="txt_alter" required placeholder="Alter" required min="16" max="134"/>
                 <label for="txt_info">Info</label>
-                <input type="text" name="txt_info" required pattern="[A-Za-z0-9]{6}" placeholder="Gib ein Passwort ein"/>
+                <input type="text" name="txt_info" required pattern="[A-Za-z0-9]{6}" placeholder="Information eingeben"/>
                 <label for="txt_passwort">Passwort</label>
                 <input type="password" name="txt_passwort"  placeholder="Gib ein Passwort ein"/>
                 </fieldset>
